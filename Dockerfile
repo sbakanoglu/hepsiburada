@@ -11,8 +11,6 @@ RUN npm i
 
 COPY . ./
 
-EXPOSE 4723
-
 VOLUME /app/report/
 
 CMD [ "npm", "run", "test-web"]
