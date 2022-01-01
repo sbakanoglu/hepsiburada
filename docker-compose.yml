@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  webdriverio:
+    build: .
+    container_name: webdriverio
+    network_mode: "host"
+    volumes:
+      - webdriverio_data:/app/report/
+
+volumes:
+  webdriverio_data:
